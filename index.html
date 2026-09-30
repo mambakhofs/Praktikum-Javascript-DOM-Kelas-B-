@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript DOM — Pengenalan DOM Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER UTAMA -->
+        <header class="main-header">
+            <span class="badge">Pertemuan 6 — 4 SKS</span>
+            <h1 id="judul-utama">Praktikum JavaScript DOM</h1>
+            <p id="sub-judul">Menghubungkan Logika JavaScript dengan Tampilan HTML secara Interaktif</p>
+        </header>
+
+        <!-- GRID UTAMA PRAKTIKUM -->
+        <main class="grid-container">
+            
+            <!-- AKTIVITAS 1 & 2: SELEKSI & MANIPULASI TEKS/STYLE -->
+            <section class="card" id="card-manipulasi">
+                <h2>1. Manipulasi Elemen & Style</h2>
+                <p class="desc">Ubah teks dan warna kartu ini secara langsung menggunakan JavaScript DOM.</p>
+                
+                <div class="preview-box" id="box-preview">
+                    <p id="teks-preview">Halo! Teks ini siap diubah oleh JavaScript.</p>
+                </div>
+
+                <div class="button-group">
+                    <button id="btn-ubah-teks" class="btn btn-primary">Ubah Teks</button>
+                    <button id="btn-toggle-warna" class="btn btn-secondary">Ganti Warna Card</button>
+                    <button id="btn-reset" class="btn btn-outline">Reset</button>
+                </div>
+            </section>
+
+            <!-- AKTIVITAS 3 & 4: EVENT & MEMBUAT ELEMEN DINAMIS (BEKAL TO-DO LIST) -->
+            <section class="card" id="card-dinamis">
+                <h2>2. Tambah Catatan Dinamis</h2>
+                <p class="desc">Ketik catatan baru di bawah ini. Tombol akan membuat elemen HTML baru secara otomatis!</p>
+
+                <div class="input-wrapper">
+                    <input type="text" id="input-catatan" placeholder="Ketik catatan praktikum di sini..." autocomplete="off">
+                    <button id="btn-tambah" class="btn btn-success">+ Tambah</button>
+                </div>
+
+                <div class="list-container">
+                    <h3>Daftar Catatan Hari Ini (<span id="jumlah-catatan">0</span>):</h3>
+                    <ul id="daftar-catatan" class="note-list">
+                        <!-- Elemen li akan ditambahkan secara dinamis via JavaScript -->
+                    </ul>
+                    <p id="pesan-kosong" class="empty-state">Belum ada catatan. Silakan tambah catatan baru!</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <p>&copy; 2026 Pemrograman Internet — Modul Praktikum JavaScript DOM</p>
+        </footer>
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT Eksternal -->
+
+</body>
+</html>
